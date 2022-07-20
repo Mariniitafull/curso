@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/shared.css">
+  <link rel="stylesheet" href="css/clientes.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+  <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js"
+    integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous">
+  </script>
+</head>
+
+<body>
+
+  <header class="main-header">
+
+    <div>
+      <a class="main-header__brand" href="index.html">Banco</a>
+    </div>
+
+    <nav class="main-nav">
+
+      <ul class="main-nav__items">
+        <li class="main-nav__item">
+          <a href="clientes.html">Clientes</a>
+        </li>
+        <li class="main-nav__item">
+          <a href="gestores.html">Gestores</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__item_mensajes" href="mensajes.html">Mensajes</a>
+        </li>
+        <li class="main-nav__item main-nav__item_logout">
+          <a href="logout.html">
+            <i class="fas fa-sign-out-alt"></i>Logout
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+  </header>
+
+  <main class="gestores-main">
+
+    <article class="gestores-article">
+      <h3>Gestores</h3>
+
+      <table class="comicGreen" id="gestores-article__table">
+        <thead>
+          <tr>
+            <th>Id</th>
+            <th>Usuario</th>
+            <th>Email</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>ana</td>
+            <td>ana@mail.com</td>
+            <td class="clientes-eliminar">X</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>nuria</td>
+            <td>nuria@mail.com</td>
+            <td class="clientes-eliminar">X</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>pepe</td>
+            <td>pepe@mail.com</td>
+            <td class="clientes-eliminar">X</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>carlos</td>
+            <td>carlos@mail.com</td>
+            <td class="clientes-eliminar">X</td>
+          </tr>
+        </tbody>
+        </tr>
+      </table>
+
+    </article>
+
+    <article class="gestores-article">
+      <h3>Insertar nuevo gestor</h3>
+
+      <form>
+
+        <div class="gesgestorestor-form__campo">
+          <label class="gestores-form__label" for="usuario">Usuario</label>
+          <input type="text" name="usuario" id="usuario">
+        </div>
+          
+        <div class="gestores-form__campo">
+          <label class="gestores-form__label" for="password">Password</label>
+          <input type="text" name="password" id="password">
+        </div>
+
+        <div class="gestores-form__campo">
+          <label class="gestores-form__label" for="email">Email</label>
+          <input type="text" name="email" id="email">
+        </div>
+
+        <input class="gestores-form__submit" type="submit" value="Insertar">
+      </form>
+    </article>
+  </main>
+
+</body>
+
+</html>
